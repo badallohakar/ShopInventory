@@ -1,0 +1,45 @@
+.optionbutton:hover{
+    background: #074e4e;
+    color: white;
+    width: 66%;
+    border: 1px solid #fff;
+    text-decoration: underline;
+    padding:5px 50px 5px 50px;
+    margin-bottom: 15px;
+    border-radius: 0px 52px 0px 52px;
+}
+
+.optionbutton,.optionbutton1{
+    background: white;
+    color: #074e4e;
+    border: 1px solid #074e4e;
+    transition: 0.5s;
+    font-size:14px;
+    width: 66%;
+    padding:5px 50px 5px 50px;
+    margin-bottom: 15px;
+    border-radius:0px 52px 0px 52px;
+}
+.active{
+    background: #074e4e;
+    color: white;
+    border: 1px solid #fff;
+    text-decoration: underline;
+    padding:5px 50px 5px 50px;
+    margin-bottom: 15px;
+    border-radius: 0px 52px 0px 52px;
+}
+.optionbutton1:hover{
+    background: #b92409;
+    color: white;
+    border: 1px solid #fff;
+    text-decoration: underline;
+    padding:5px 50px 5px 50px;
+    margin-bottom: 15px;
+    border-radius: 0px 52px 0px 52px;
+}
+
+.horline{
+    border: 1px solid #074e4e;
+    
+}

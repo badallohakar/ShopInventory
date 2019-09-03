@@ -1,0 +1,25 @@
+.horline{
+    border: 1px solid #074e4e;   
+}
+.customerlist{
+    border-left:2px solid #074e4e;
+    padding-left: 10px;
+    text-align: left;
+    padding-bottom: 5px;
+    padding-top:5px;
+    cursor: pointer;
+    margin-bottom: 5px;    
+}
+.customerlist:hover , .active{
+    border-left:2px solid #fff;
+    padding-left: 10px;
+    background: #074e4e;
+    padding-bottom: 5px;
+    padding-top:5px;
+    color: white;
+    text-align: center;
+    border-radius: 0px 17px 17px 0px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 5px;    
+}

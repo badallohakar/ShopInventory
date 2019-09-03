@@ -1,0 +1,8 @@
+.container-fluid,.row{
+    padding: 0px;
+    margin: 0px;
+}
+.header{
+    background: #074e4e;
+    border-bottom:2px solid white;
+}

@@ -1,0 +1,24 @@
+<div class="container">
+  
+  <div class="row">
+    <div class="col-md-3">
+        <p>Customer List</p>
+        <div class="horline"></div>
+        <br>
+       
+        <div *ngFor="let customer of customergotdata;let i=index " class="customerlist" 
+         [routerLink]="['/customers/customerlist/customeroptions']" (click)="customerclick(customer,i)" >
+         {{i+1}}.  {{ customer.name }}</div>
+        
+        
+    </div>
+    <div class="col-md-9">
+       
+        <router-outlet>
+
+        </router-outlet>
+    </div>
+    
+  </div>
+ 
+</div>

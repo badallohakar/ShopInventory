@@ -1,0 +1,73 @@
+
+<div class="row">
+  <div class="col-md-2 sidebar">
+      <ul>
+        <li  [routerLinkActive]="['active']" >Dashboard</li>
+        <li [routerLinkActive]="['active']" [routerLink]="['/customers']">Customers</li>
+      </ul>
+  </div>
+  <div class="col-md-10 resultpan">
+    <div class="row">
+      <div class="col-md-12">
+        <br>
+        
+        <div class="container">
+           
+            <button type="button" title="Add Customer" class="addbtn" data-toggle="modal" data-target="#myModal">
+              +
+            </button>
+          
+            
+            <div class="modal" id="myModal">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                
+                    <form #registrationform="ngForm" (ngSubmit) = "registerCustomer(registrationform)" >
+                  <div class="modal-header">
+                    <h4 class="modal-title">New Customer</h4>
+                    <button type="button" class="close" data-dismiss="modal" (click) = resetdata(registrationform)>&times;</button>
+                  </div>
+                  
+                  <div class="modal-body">
+                      <div class="row">
+                          <div class="col-md-12">
+                            <div class="headinfo">Customer Details</div>
+                              <input type="name" class="inptfiled" placeholder="Enter Name" [(ngModel)]="cname" name="cname">
+                              <input type="number" class="inptfiled" placeholder="Enter Contact" [(ngModel)]="number" name="number"><br>
+                              <input type="text" class="inptfiled1" placeholder="Enter Address" [(ngModel)]="add" name="add">
+                              <hr>
+                          </div> 
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                            <div class="headinfo">Product Details</div>
+                              <input type="text" class="inptfiled" placeholder="Product Id" [(ngModel)]="pid" name="pid">
+                              <input type="text" class="inptfiled" placeholder="Product name" [(ngModel)]="pname" name="pname"><br>
+                              <input type="number" class="inptfiled1" placeholder="Product Price" [(ngModel)]="pprice" name="pprice">   
+                          </div> 
+                      </div>
+                      <div class="row">
+                          <div class="col-md-12">
+                              <p >{{status}}</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn cbtn">Save</button>
+                  </div>
+                </form>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <br>
+        <router-outlet>
+            
+        </router-outlet>
+      </div>
+    </div>
+    <br>
+      
+  </div>
+</div>

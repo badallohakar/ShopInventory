@@ -1,0 +1,17 @@
+<div class="row">
+        <div class="col-md-4">
+                        <p>Options</p>
+                        <div class="horline"></div>
+                         <br>
+                        <div class="optionbutton" title="Customer Details" [routerLinkActive]="['active']" [routerLink]="['/customers/customerlist/customeroptions/details']">Details</div>
+                        <div class="optionbutton" title="Order Details" [routerLinkActive]="['active']" [routerLink]="['/customers/customerlist/customeroptions/order']">Orders</div>
+                        <div class="optionbutton1" title="Delete Customer" (click)="deleteData()" >Delete</div>
+        </div>
+        <div class="col-md-8">
+                        <p>Customer / Order Details</p>
+                        <div class="horline"></div>
+                        <router-outlet>
+                
+                        </router-outlet>
+        </div>
+</div>
